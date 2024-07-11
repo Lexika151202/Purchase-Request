@@ -16,6 +16,7 @@
 
     # always loaded
     'data': [
+        'data/sequence_data.xml',
         'security/ir.model.access.csv',
         'views/purchase_request_line_views.xml',
         'views/purchase_request_views.xml',

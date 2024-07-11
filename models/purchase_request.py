@@ -9,6 +9,7 @@ class PurchaseRequest(models.Model):
     _name = 'purchase.request'
     _description = 'purchase_request.purchase_request'
 
+    name = fields.Char(string='Name', readonly=True, default='New name')
     department_id = fields.Many2one('hr.department', string='Department ID')
     request_id = fields.Many2one('res.users', string='Request ID')
     approved_id = fields.Many2one('res.users', string='Approved ID')
@@ -43,7 +44,12 @@ class PurchaseRequest(models.Model):
             return super(PurchaseRequest, self).unlink()
         raise UserError('Only draft requests can be deleted.')
 
-    def write(self, values):
-        if self.state == 'wait':
-            return super(PurchaseRequest, self).write({'quantity_approved': values['quantity_approved']})
-        raise UserError('Only update quantity_approved in waiting state.')
+    def send_draft(self):
+        for record in self:
+            record.write({'state': 'wait'})
+
+    @api.model
+    def create(self, vals):
+        if vals.get('name', 'New') == 'New':
+            vals['name'] = self.env['ir.sequence'].next_by_code('purchase.request') or 'New'
+        return super(PurchaseRequest, self).create(vals)

@@ -25,12 +25,12 @@
                 <form>
                     <sheet>
                         <group>
-                            <field name="request_id"/>
-                            <field name="product_id"/>
-                            <field name="uom_id"/>
-                            <field name="quantity"/>
-                            <field name="quantity_approved"/>
-                            <field name="total"/>
+                            <field name="request_id" readonly="1"/>
+                            <field name="product_id" readonly="1"/>
+                            <field name="uom_id" readonly="1"/>
+                            <field name="quantity" readonly="1"/>
+                            <field name="quantity_approved" readonly="1"/>
+                            <field name="total" readonly="1"/>
                         </group>
                     </sheet>
                 </form>
@@ -47,7 +47,7 @@
 
 
         <!-- Root menu -->
-        <menuitem name="Purchase Request" id="purchase_request_menu_root" action="purchase_request_line_action"/>
+        <menuitem name="Purchase Request Line" id="purchase_request_line_menu" parent="purchase_request_menu_root" action="purchase_request_line_action"/>
 <!--        <menuitem name="menu1" parent="purchase_request_menu_root" id="menu_level1" />-->
         -->
     </data>

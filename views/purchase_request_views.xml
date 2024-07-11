@@ -7,6 +7,7 @@
             <field name="model">purchase.request</field>
             <field name="arch" type="xml">
                 <tree>
+                    <field name="name" />
                     <field name="department_id"/>
                     <field name="request_id"/>
                     <field name="approved_id"/>
@@ -29,18 +30,17 @@
                 <form>
                     <header>
                         <field name="state" widget="statusbar" option="{'clickable': '1'}"/>
+                        <button name="send_draft" string="Submit" type="object" attrs="{'invisible' : [('state', '!=', 'draft')]}" />
                     </header>
 
                     <sheet>
                         <group>
-                            <field name="department_id"/>
-                            <field name="request_id"/>
-                            <field name="approved_id"/>
+                            <field name="name" readonly="True"/>
+                            <field name="department_id" options = "{'no_edit': True, 'no_create': True}"/>
+                            <field name="request_id" options = "{'no_edit': True, 'no_create': True}"/>
+                            <field name="approved_id" options = "{'no_edit': True, 'no_create': True}"/>
                             <field name="date"/>
-<!--                            <field name="date_approve"/>-->
-<!--                            <field name="request_line_ids"/>-->
                             <field name="description"/>
-                            <field name="state"/>
                         </group>
 
                         <notebook>
@@ -51,6 +51,7 @@
                                         <field name="uom_id" attrs="{'readonly': [('parent.state', '!=', 'draft')]}" />
                                         <field name="quantity" attrs="{'readonly': [('parent.state', '!=', 'draft')]}" />
                                         <field name="quantity_approved" attrs="{'readonly': [('parent.state', '!=', 'wait'), ('parent.state', '!=', 'draft') ]}"/>
+                                        <field name="total" attrs="{'readonly': [('parent.state', '!=', 'draft')]}" />
                                     </tree>
                                 </field>
                             </page>
@@ -61,8 +62,7 @@
         </record>
 
 
-        <!-- actions opening views on models -->
-
+        <!-- actions -->
         <record model="ir.actions.act_window" id="purchase_request_action">
             <field name="name">Purchase Request</field>
             <field name="res_model">purchase.request</field>
@@ -72,7 +72,6 @@
 
         <!-- Root menu -->
         <menuitem name="Purchase Request" id="purchase_request_menu_root" action="purchase_request_action"/>
-<!--        <menuitem name="menu1" parent="purchase_request_menu_root" id="menu_level1" />-->
-        -->
+
     </data>
 </odoo>
