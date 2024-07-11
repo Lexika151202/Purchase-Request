@@ -1,0 +1,176 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_request
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20240627\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-11 02:10+0000\n"
+"PO-Revision-Date: 2024-07-11 02:10+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request__date_approve
+msgid "Approve date"
+msgstr "Ngày duyệt"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request__approved_id
+msgid "Approved ID"
+msgstr "ID Duyệt"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request_line__quantity_approved
+msgid "Approved Quantity"
+msgstr "Số lượng duyệt"
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__purchase_request__state__draft
+msgid "Bản Nháp"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__purchase_request__state__wait
+msgid "Chờ Duyệt"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request__create_uid
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request_line__create_uid
+msgid "Created by"
+msgstr "Tạo bởi"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request__create_date
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request_line__create_date
+msgid "Created on"
+msgstr "Tạo trên"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request__date
+msgid "Date"
+msgstr "Ngày"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request__department_id
+msgid "Department ID"
+msgstr "ID Ban"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request__display_name
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request_line__display_name
+msgid "Display Name"
+msgstr "Tên Hiển Thị"
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__purchase_request__state__approved
+msgid "Hoàn Thành"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request__id
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request_line__id
+msgid "ID"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request____last_update
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request_line____last_update
+msgid "Last Modified on"
+msgstr "Chỉnh sửa cuối"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request__write_uid
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request_line__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật cuối bởi"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request__write_date
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request_line__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật cuối"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request_line__product_id
+msgid "Product ID"
+msgstr "ID Sản phẩm"
+
+#. module: purchase_request
+#: model:ir.actions.act_window,name:purchase_request.purchase_request_action
+#: model:ir.ui.menu,name:purchase_request.purchase_request_menu_root
+msgid "Purchase Request"
+msgstr "Yêu cầu mua"
+
+#. module: purchase_request
+#: model:ir.actions.act_window,name:purchase_request.purchase_request_line_action
+msgid "Purchase Request Line"
+msgstr "Chi tiết yêu cầu"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request_line__quantity
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request__request_id
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request_line__request_id
+msgid "Request ID"
+msgstr "ID Yêu cầu"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.purchase_request_form_view
+msgid "Request Request Lines"
+msgstr "Chi tiết"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request__request_line_ids
+msgid "Request line IDs"
+msgstr "ID chi tiết"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request__state
+msgid "State"
+msgstr "Trạng thái"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request__description
+msgid "This is Purchase request description"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request_line__total
+msgid "Total"
+msgstr "Tổng tiền"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request__total_amount
+msgid "Total Amount"
+msgstr "Thành tiền"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request__total_quantity
+msgid "Total quantity"
+msgstr "Tổng lượng"
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__purchase_request__state__cancel
+msgid "Từ Chối"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_purchase_request_line__uom_id
+msgid "Unit of measure ID"
+msgstr "Đơn vị"
+
+#. module: purchase_request
+#: model:ir.model,name:purchase_request.model_purchase_request
+#: model:ir.model,name:purchase_request.model_purchase_request_line
+msgid "purchase_request.purchase_request"
+msgstr ""
